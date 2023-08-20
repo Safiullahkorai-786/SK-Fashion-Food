@@ -24,5 +24,13 @@ The **SK Fashion Food Website** is a project developed during my first semester 
    ```bash
    git clone https://github.com/Safiullahkorai-786/SK-Fashion-Food.git
 
-2. Open the index.html file in your web browser to view the website locally.
+2. Open the SK_FOOD_FASHION.html file in your web browser to view the website locally.
 
+## Future Plans
+Do not have any plans right now
+
+## License
+This project is licensed under the MIT License.
+
+## Contact
+Connect with me on LinkedIn  to discuss collaboration or any questions.
