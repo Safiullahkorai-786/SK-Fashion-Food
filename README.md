@@ -30,7 +30,11 @@ The **SK Fashion Food Website** is a project developed during my first semester 
 Do not have any plans right now
 
 ## License
-This project is licensed under the MIT License.
+
+This project is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+You are free to use and share this code as long as you provide attribution, do not use it for commercial purposes, and share any adaptations under the same license.
+
 
 ## Contact
 Connect with me on LinkedIn  to discuss collaboration or any questions.
