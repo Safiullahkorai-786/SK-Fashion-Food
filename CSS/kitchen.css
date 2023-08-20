@@ -1,0 +1,401 @@
+/* Utilities Classes */
+.h-primary{
+    font-size: 4rem;
+    padding: 12px;
+    text-transform: capitalize;
+    font-family: 'Baloo 2', cursive;
+}
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+    text-transform: capitalize;
+    font-family: 'Baloo 2', cursive;
+}
+.h-tertiary{
+    font-size: 1.8rem;
+    padding: 12px;
+    text-transform: capitalize;
+    font-family: 'Baloo 2', cursive;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: silver;
+    margin: 20px;
+    border-radius: 10px;
+    color: black;
+    cursor: pointer;
+}
+.btn:hover{
+    color: silver;
+    background-color: black;
+
+}
+.center{
+    text-align: center;
+}
+
+/* CSS Reset */
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --horizontal:26px;
+}
+
+/* NAVIGATION BAR */
+.navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width:100%;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+.navbar::before{
+    content: "";
+    background-color: gray;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* NAVIGATION BAR: logo and image styling */
+
+#logo{
+    margin: 10px 35px;
+}
+img[alt="SK food fashion logo"]{
+    width: 100px;
+    border-radius: 100%;
+    margin: 18px 8px;
+    margin-left: 30px;
+}
+
+/* NAVIGATION BAR: list styling */
+.navbar .navigation{
+    display: flex;
+    margin-left: -2.5% ;
+    /* margin-right: -10%; */
+    text-align: center;
+    justify-content: center;
+    /* border: 2px solid yellow; */
+    width: 100vw;
+}
+.navbar .navigation li{
+    font-size: 1.5rem;
+    list-style: none;
+}
+.navbar .navigation li a{
+    padding:3px 23px;
+    text-transform: capitalize;
+    display: block;
+    text-decoration: none;
+    border-radius: 20px;
+    color:white;
+    margin: 15px;
+}
+.navbar .navigation li a:hover{
+    background-color: black;
+    color:white;
+}
+
+/* Home Menu */
+#home{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 50px;
+    height: 730px;
+    border: 2px solid yellow; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 50px;
+    height: 730px;  /*570*/
+    margin-bottom: 50px;
+    /* border: 2px solid yellow; */
+}
+#home::before{
+   content: "";
+   background: url('https://th.bing.com/th/id/R.6a6378fccf92ff9ee83828b951e25472?rik=NatZPelhRts6cA&pid=ImgRaw&r=0') no-repeat center center/cover;
+   position: absolute;
+   top:0px;
+   left:0px;
+   width:100%;
+   height: 800px;
+   z-index: -1;
+   opacity: 0.8;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-shadow: 0.1em 0.1em 0.5em black;
+    border-right: 5px solid black;
+    animation: typewriter 2s steps(13) 1 alternate,
+    blink 900ms steps(15) 1 alternate;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 800px;
+    }
+}
+@keyframes blink {
+    from {
+        border-color: rgb(12, 10, 10)
+    }
+    to {
+        border-color: transparent;
+    }
+}
+
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Baloo 2', cursive;
+    text-shadow: 0.1em 0.1em 0.5em black;
+}
+
+/* MENU SECTION */
+.menu{
+    margin: 34px;
+    display: flex;
+}
+.menu .box{
+    border: 2px solid green;
+    padding: 34px;
+    margin: 3px 16px; /*Y X*/
+    border-radius: 30px;
+    background-color: rgb(244, 244, 244);
+}
+/* .services::after{
+    content: "";
+    background: url("https://th.bing.com/th/id/R.ef4b4d605c6bf15aae21182b556d5e41?rik=vbWtEvQqmGlVgQ&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_1614.png&ehk=XO9ezYyWBZj4YPMBUpgxFxlzK6HGmq61JgqMvdPLCT4%3d&risl=&pid=ImgRaw&r=0");
+    display: flex;
+    align-items: center;
+    width:100%;
+    height: 100%;
+} */
+.menu .box img{
+    display: block;
+    height:160px;
+    margin: auto;
+}
+
+.menu .box p{
+    font-family: 'Bree Serif', serif;
+}
+
+/*MORE BUTTON*/
+.more{
+    /* border: 2px solid green; */
+    margin-bottom: 100px;
+}
+.more-div{
+    display: block;
+    margin: auto;
+}
+.more-button{
+    padding:4px 200px;
+    display: block;
+    cursor: pointer;
+}
+.more .more-div a{
+    text-decoration: none;
+}
+
+
+
+/* SERVICES SECTION */
+.service{
+    margin: 34px;
+    display: flex;
+    /* border: 2px solid yellow; */
+    align-items: center;
+    justify-content: center;
+    margin-top: 0%;
+}
+.service .box{
+    /* border: 2px solid green; */
+    padding: 34px;
+    margin: 3px 16px; /*Y X*/
+    border-radius: 30px;
+    /* background-color: rgb(244, 244, 244); */
+}
+.service .box img{
+    display: block;
+    height:160px;
+    margin: auto;
+}
+
+.service .box .catereing{
+    width: 170px;
+    height: 170px;
+}
+
+.service .box p{
+    font-family: 'Bree Serif', serif;
+}
+#service-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+#service-container::before{
+    content: "";
+    background: url('https://th.bing.com/th/id/R.5b81ab5a0a0d9cde548b377c13fe3827?rik=cJGUUlrcjgORvg&riu=http%3a%2f%2fwonderfulengineering.com%2fwp-content%2fuploads%2f2014%2f04%2fkitchen-wallpaper-8.jpg&ehk=v%2bTjf0ub3bhera0HP3D1It4HcyHO1DMoQkrjlytGbCY%3d&risl=&pid=ImgRaw&r=0') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+    height: 750px;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/*ONLINE PAYMENT*/
+
+.payment-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid yellow; */
+}
+.payment-box img{
+    margin-top: 0px;
+    width: 40vw;
+}
+
+/* CLIENTS SECTION */
+#client-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 3px solid red; */
+    margin-top: 50px;
+}
+/* #client-section::before{
+    content: "";
+    position: absolute;
+    background-color: aqua;
+    height: 100%;
+    width:100%;
+    z-index:-1;
+} */
+.clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid green; */
+}
+.clients img{
+   width: 90vw;
+   /* border: 2px solid rgb(137, 38, 27); */
+   cursor: pointer;
+}
+.client-items{
+    margin:10px ;
+}
+
+/*CONTACT US*/
+#contact{
+    position: relative;
+    margin-top: 50px;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+    opacity: 0.7;
+    background: url("https://th.bing.com/th/id/R.ca9d6c63178f8f0ef602782603e6a3dd?rik=5eNaBpJ28%2b2auA&pid=ImgRaw&r=0") no-repeat center center/cover;
+}
+
+.contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 34px;
+}
+.contact-box input, .contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+.contact-box form{
+    width: 40%;
+}
+.contact-box label{
+    width: 1.3rem;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    /* margin-left: 5px ; */
+}
+.contact-box input[type=submit]{
+    width: 90%;
+    display: block;
+    margin: auto;
+    resize: none; 
+    /* display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row-reverse; */
+}
+
+.contact-box input[type=submit]:hover{
+    color:white;
+    background-color: black;
+    cursor: pointer;
+}
+
+
+
+/*FOOTER*/
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    padding: 9px 20px;
+}
+#footer::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+    opacity: 0.7;
+    background: url("https://th.bing.com/th/id/R.313b465048bac513bb693ad6dc142b18?rik=gyh%2bvjmeaB7dsw&riu=http%3a%2f%2fcvitanic.info%2fwp-content%2fuploads%2f2016%2f05%2fFooter-background.jpg&ehk=Cs8hEXPn6%2bBlENfmo693IcZ%2fU%2bVQ49aHjgTFixon9i4%3d&risl=&pid=ImgRaw&r=0") no-repeat center center/cover;
+}
